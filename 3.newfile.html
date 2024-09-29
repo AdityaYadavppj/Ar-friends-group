@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Report Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px; /* Added margin between sections */
+        }
+        .row label {
+            font-weight: bold;
+            width: 30%;
+        }
+        .row input[type="text"] {
+            width: 65%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        h3 {
+            margin-top: 30px; /* Add space before the table section */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px; /* Increased space before the table */
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Grade Report Form</h2>
+
+    <!-- Postal Address (To) and From Section -->
+    <div class="row">
+        <label for="postal-address">To (Postal Address):</label>
+        <input type="text" id="postal-address" name="postal-address" placeholder="Enter Postal Address">
+    </div>
+    <div class="row">
+        <label for="from-address">From:</label>
+        <input type="text" id="from-address" name="from-address" placeholder="Enter From Address">
+    </div>
+
+    <!-- Roll No., Serial No. -->
+    <div class="row">
+        <label for="roll-no">Roll No.:</label>
+        <input type="text" id="roll-no" name="roll-no" placeholder="Enter Roll No.">
+    </div>
+    <div class="row">
+        <label for="serial-no">Serial No.:</label>
+        <input type="text" id="serial-no" name="serial-no" placeholder="Enter Serial No.">
+    </div>
+
+    <!-- Name and Father's Name -->
+    <div class="row">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Name">
+    </div>
+    <div class="row">
+        <label for="father-name">Father's Name:</label>
+        <input type="text" id="father-name" name="father-name" placeholder="Enter Father's Name">
+    </div>
+
+    <!-- Address -->
+    <div class="row">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" placeholder="Enter Address">
+    </div>
+
+    <h3>Letter Grades & Corresponding Percentile Scores</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Boundaries of Scores</th>
+                <th>Letter Grades</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>90-100</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>82-89</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>74-81</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>66-73</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>58-65</td>
+                <td>C+</td>
+            </tr>
+            <tr>
+                <td>50-57</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>42-49</td>
+                <td>D+</td>
+            </tr>
+            <tr>
+                <td>34-41</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>33-39</td>
+                <td>E</td>
+            </tr>
+            <tr>
+                <td>32 & Below</td>
+                <td>F</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
